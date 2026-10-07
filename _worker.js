@@ -125,7 +125,7 @@ export default {
 
 async function handleGetRegions() {
     try {
-        const res = await fetch("https://zip.cm.edu.kg/all.txt");
+        const res = await fetch("https://raw.githubusercontent.com/hualuozhishen/Senflare-Proxy-Test/refs/heads/main/Senflare-Proxy-Bidirectional.txt");
         const text = await res.text();
         const matches = text.match(/#[A-Z]+/g) || [];
         const counts = {};
